@@ -1,0 +1,1 @@
+A community dedicated to jolly cooperation in the Dark Souls series.
