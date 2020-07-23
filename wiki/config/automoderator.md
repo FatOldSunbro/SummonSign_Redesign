@@ -254,12 +254,26 @@ modmail: |
 
 ---
 
+### Report modmail
+reports: 3
+modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.
+
+---
+
+### Remove reported users
+reports: 6
+action: remove
+comment: The post was removed for being reported excessively, MODs will look into this matter.
+comment_stickied: true
+modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 reports. Please investigate and ensure that this action was correct.
+
+---
+
 ### Hate Speech Filters
 # Remove comments that were reported and contain the following words
 reports: 1
-title+body (includes, regex): [ "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap", "nip", "wop", "beaner", "cocksucker", "abo", "boong", "chink", "surrender monkey", "kafir", "kaffir", "raghead", "pikey", "towel head", "greatapes", "polfacts", "bundle of sticks", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
+body+title (regex): [ "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "cocksucker", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
 action: remove
-action_reason: Reported & contains trigger word
 modmail: |
     Full text: {{body}}
 
