@@ -14,6 +14,7 @@ comment: |
     > e.g., [*Help*][PS4][100] Abyss Watchers
 
     Please re-submit with the correct formatting. Thanks!
+comment_stickied: true
 
 ---
 
@@ -31,6 +32,31 @@ comment: |
     > e.g., [Help][*PS4*][100] Abyss Watchers
 
     Please re-submit with the correct formatting. Thanks!
+comment_stickied: true
+
+---
+### Redirect trading posts
+type: submission
+title (regex): ["dropping", "duping", "item(s)", "mule", "transfer"]
+action: remove
+modmail: |
+    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
+comment: |
+    Hi, Your post has been automatically removed as it does not meet this subreddit rules.
+
+    It appears that this post is about trading/duping items, please use the correct subreddit for trading items:
+
+    * For Dark Souls and Dark Souls Remastered use r/snuggly
+
+    * For Dark Souls 2 use r/wheelanddeal
+
+    * For Dark Souls 3 use r/pumparum
+
+    Please re-submit in the correct subreddit. Thanks!
+
+    ---
+    If this action was mistakenly performed please [contact the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=)
+comment_stickied: true
 
 ---
 
@@ -215,13 +241,52 @@ set_flair:
 
 ---
 
-    author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, Abyssal_Paladin, TobiasNH, Phypur, Timageness]
-    action: remove
+author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness]
+action: remove
     
 ---
    
-   # Auto-remove offensive words or phrases - silently nuke them forever
-    title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?"]
-    action: remove
-    modmail: |
-        The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+### Auto-remove offensive words or phrases - silently nuke them forever
+title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?"]
+action: remove
+modmail: |
+    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+
+---
+
+### Hate Speech Filters
+# Remove comments that were reported and contain the following words
+reports: 1
+title+body (includes, regex): [ "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap", "nip", "wop", "beaner", "cocksucker", "abo", "boong", "chink", "surrender monkey", "kafir", "kaffir", "raghead", "pikey", "towel head", "greatapes", "polfacts", "bundle of sticks", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
+action: remove
+action_reason: Reported & contains trigger word
+modmail: |
+    Full text: {{body}}
+
+    /u/{{author}} posted a comment (containing the word [{{match}}]) that was reported and removed. Verify this action.
+
+---
+
+### Account karma check
+author:
+    combined_karma: < 1
+action: remove
+comment: |
+    Hello {{author}}, your post has been automatically removed as your account is flagged as a troll account/bot. If this was a mistake contact the moderators.
+
+    ---
+    Thank you for your understanding and co-operation in creating an enjoyable gaming environment for all.
+
+    If you have any trouble please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
+comment_stickied: true
+
+---
+
+### Remove posts from forbidden domains
+domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com]
+action: remove
+comment: |
+    Your submission was automatically removed because {{domain}} is not an approved site.
+comment_stickied: true
+
+---
