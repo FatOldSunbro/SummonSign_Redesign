@@ -297,7 +297,7 @@ comment_stickied: true
 ---
 
 ### Remove posts from forbidden domains
-domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com]
+domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com, prnt.sc]
 action: remove
 comment: |
     Your submission was automatically removed because {{domain}} is not an approved site.
