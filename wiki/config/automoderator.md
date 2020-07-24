@@ -1,11 +1,15 @@
-## Auto-remove posts that do not meet formatting guidelines
+# AutomoDerator config file
 
-# check for request type 
+---
+
+# Section 1 - Auto-remove posts that do not meet formatting guidelines
+
+---
+
+### check for request type 
 type: submission
 ~title (regex): ["help", "summon", "co-?op", "pvp"]
 action: remove
-#modmail: |
-#    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it does not contain a type.
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
@@ -18,12 +22,10 @@ comment_stickied: true
 
 ---
 
-# check for platform 
+### check for platform 
 type: submission
 ~title (regex): ["ps4", "xbox", "xbone", "xb(ox)?1", "pc", "steam", "ps3", "switch"]
 action: remove
-#modmail: |
-#    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it does not contain a platform.
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
@@ -35,12 +37,13 @@ comment: |
 comment_stickied: true
 
 ---
+
 ### Redirect trading posts
 type: submission
-title (regex): ["dropping", "duping", "item(s)", "mule", "transfer"]
+title (regex): ["dropping", "duping", "item", items, "mule", "transfer", "transfers", "trade"]
 action: remove
-modmail: |
-    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
+# modmail: |
+#    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
 comment: |
     Hi, Your post has been automatically removed as it does not meet this subreddit rules.
 
@@ -57,6 +60,10 @@ comment: |
     ---
     If this action was mistakenly performed please [contact the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=)
 comment_stickied: true
+
+---
+
+# Section 2 - Set post flairs
 
 ---
 
@@ -241,16 +248,7 @@ set_flair:
 
 ---
 
-author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness]
-action: remove
-    
----
-   
-### Auto-remove offensive words or phrases - silently nuke them forever
-title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?"]
-action: remove
-modmail: |
-    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+# Section 3 - Security rules
 
 ---
 
@@ -268,11 +266,19 @@ comment_stickied: true
 modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 reports. Please investigate and ensure that this action was correct.
 
 ---
+   
+### Auto-remove offensive words or phrases - silently nuke them forever
+title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?"]
+action: remove
+modmail: |
+    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+
+---
 
 ### Hate Speech Filters
-# Remove comments that were reported and contain the following words
+### Remove comments that were reported and contain the following words
 reports: 1
-body+title (regex): [ "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "cocksucker", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
+body+title (regex): [ "gay", "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "cocksucker", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
 action: remove
 modmail: |
     Full text: {{body}}
@@ -302,5 +308,11 @@ action: remove
 comment: |
     Your submission was automatically removed because {{domain}} is not an approved site.
 comment_stickied: true
+
+---
+
+### Slient remove post from the following users(shadowban):
+author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95]
+action: remove
 
 ---
