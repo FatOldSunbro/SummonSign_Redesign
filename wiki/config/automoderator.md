@@ -268,6 +268,7 @@ modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please inve
 ### Remove reported users
 reports: 6
 action: remove
+action_reason: "reported at least 6 times."
 comment: The post was removed for being reported excessively, MODs will look into this matter.
 comment_stickied: true
 modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 reports. Please investigate and ensure that this action was correct.
