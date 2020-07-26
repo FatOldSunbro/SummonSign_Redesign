@@ -327,15 +327,6 @@ comment: |
 
 ---
 
-### Throwaway Account Prevention
-author:
-    account_age: "< 1 days"
-action: remove
-action_reason: "throwaway account prevention."
-modmail: The above {{kind}} by /u/{{author}} was removed because it appears to be a throwaway account. Please investigate and ensure that this action was correct.
-
----
-
 ### Account karma check
 author:
     combined_karma: "< -50"
