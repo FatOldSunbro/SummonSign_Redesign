@@ -332,6 +332,7 @@ author:
     account_age: "< 1 days"
 action: remove
 action_reason: "throwaway account prevention."
+modmail: The above {{kind}} by /u/{{author}} was removed because it appears to be a throwaway account. Please investigate and ensure that this action was correct.
 
 ---
 
@@ -348,6 +349,7 @@ comment: |
 
     If you have any trouble please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
 comment_stickied: true
+modmail: The above {{kind}} by /u/{{author}} was removed because it appears to be a troll account. Please investigate and ensure that this action was correct.
 
 ---
 
