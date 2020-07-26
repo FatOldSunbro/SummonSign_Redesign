@@ -2,7 +2,7 @@
 
 ---
 
-# Section 1 - Auto-remove posts that do not meet formatting guidelines
+# Section 1 - Auto-remove posts that do not meet formatting guidelines / Title Control
 
 ---
 
@@ -10,6 +10,7 @@
 type: submission
 ~title (regex): ["help", "summon", "co-?op", "pvp"]
 action: remove
+action_reason: "missing request type in the title."
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
@@ -26,6 +27,7 @@ comment_stickied: true
 type: submission
 ~title (regex): ["ps4", "xbox", "xbone", "xb(ox)?1", "pc", "steam", "ps3", "switch"]
 action: remove
+action_reason: "missing platform in the title."
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
@@ -42,6 +44,7 @@ comment_stickied: true
 type: submission
 title (regex): ["dropping", "duping", "item", items, "mule", "transfer", "transfers", "trade"]
 action: remove
+action_reason: "submission about trading items."
 # modmail: |
 #    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
 comment: |
@@ -87,7 +90,7 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["((xbox|xbox1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
     text: Help Me!
     css_class: help-me-xbox
@@ -132,7 +135,7 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["((xbox|xbox1|xbone)(.*)summon|summon(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)summon|summon(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
     text: Summon Me!
     css_class: summon-me-xbox
@@ -177,7 +180,7 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["((xbox|xbox1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
     text: Co-op with Me!
     css_class: coop-xbox
@@ -222,7 +225,7 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["((xbox|xbox1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
     text: Fight Me!
     css_class: arena-xbox
@@ -252,6 +255,10 @@ set_flair:
 
 ---
 
+# Moderator Alerts
+
+---
+
 ### Report modmail
 reports: 3
 modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.
@@ -266,10 +273,16 @@ comment_stickied: true
 modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 reports. Please investigate and ensure that this action was correct.
 
 ---
-   
+
+# Content Quality Control
+
+---
+
+### Hate Speech Filters
 ### Auto-remove offensive words or phrases - silently nuke them forever
-title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?"]
+title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?", "a(ss|rse|es)([ -]?holes?)?","b(i|\\*)o?(tch|\\*{3})(y|es)?","cocks?([ -]?suck(ers?|ing)?)?","cum(ming|[ -]shots?)?","cunts?","((mother|motha|mutha)[ -]?)?f(u?c?k?k|\\*ck|\\*{0,2}k|\\*{3})(er|ed|ing|s)?", "s(h(i|ar?|\\*)t|\\*{3}|h\\*{2})(s|ter|e|ting)?", "lesbo", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)"]
 action: remove
+action_reason: "offensive content."
 modmail: |
     The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
 
@@ -278,8 +291,9 @@ modmail: |
 ### Hate Speech Filters
 ### Remove comments that were reported and contain the following words
 reports: 1
-body+title (regex): [ "gay", "cuck", "cucks", "trap", "lesbo", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "cocksucker", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "dogshit" ]
+body+title (regex): [ "gay", "cuck", "cucks", "trap", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "dogshit" ]
 action: remove
+action_reason: "Reported and contains offensive content."
 modmail: |
     Full text: {{body}}
 
@@ -287,10 +301,44 @@ modmail: |
 
 ---
 
+### Remove posts from forbidden domains
+domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com, prnt.sc, prntscr.com, tinypic.com]
+action: remove
+action_reason: "not allowed domain."
+comment: |
+    Your submission was automatically removed because {{domain}} is not an approved site.
+comment_stickied: true
+
+---
+
+### Emoji ban
+title (regex, includes): ["(?#Zero Width Joiner)[\u200d]", "(?#Box Drawing)[\u2500-\u257f]+", "(?#Miscellaneous Symbols)[\u2600-\u26ff]", "(?#Dingbats)[\u2700-\u27ff]", "(?#Braille)[\u2800-\u28ff]", "(?#!Katakana Letter Tu)[\u30c4]", "(?#Various Emoji)[\U0001F000-\U0001FAFF]"]
+action: remove
+action_reason: "not allowed emoji/character."
+comment: |
+    Your [{{kind}}]({{permalink}} in /r/{{subreddit}}) has been automatically removed because you used an emoji or other symbol.
+
+    Please retry your {{kind}} using text characters only.
+
+---
+
+# User Control
+
+---
+
+### Throwaway Account Prevention
+author:
+    account_age: "< 1 days"
+action: remove
+action_reason: "throwaway account prevention."
+
+---
+
 ### Account karma check
 author:
-    combined_karma: < 1
+    combined_karma: "< -50"
 action: remove
+action_reason: "account karma below -50, possible troll."
 comment: |
     Hello {{author}}, your post has been automatically removed as your account is flagged as a troll account/bot. If this was a mistake contact the moderators.
 
@@ -302,17 +350,9 @@ comment_stickied: true
 
 ---
 
-### Remove posts from forbidden domains
-domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com, prnt.sc]
-action: remove
-comment: |
-    Your submission was automatically removed because {{domain}} is not an approved site.
-comment_stickied: true
-
----
-
 ### Slient remove post from the following users(shadowban):
 author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95]
 action: remove
+action_reason: "user is silenced."
 
 ---
