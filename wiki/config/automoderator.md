@@ -281,7 +281,7 @@ modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 r
 
 ### Hate Speech Filters
 ### Auto-remove offensive words or phrases - silently nuke them forever
-title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?","b(i|\\*)o?(tch|\\*{3})(y|es)?","cocks?([ -]?suck(ers?|ing)?)?","cum(ming|[ -]shots?)?","cunts?", "lesbo", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)"]
+title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?","cocks?([ -]?suck(ers?|ing)?)?","cum(ming|[ -]shots?)?","cunts?", "lesbo", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)"]
 action: remove
 action_reason: "offensive content."
 modmail: |
@@ -292,7 +292,7 @@ modmail: |
 ### Hate Speech Filters
 ### Remove comments that were reported and contain the following words
 reports: 1
-body+title (regex): [ "gay", "cuck", "cucks", "trap", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "dogshit", "a(ss|rse|es)([ -]?holes?)?", "((mother|motha|mutha)[ -]?)?f(u?c?k?k|\\*ck|\\*{0,2}k|\\*{3})(er|ed|ing|s)?", "s(h(i|ar?|\\*)t|\\*{3}|h\\*{2})(s|ter|e|ting)?" ]
+body+title (regex): [ "gay", "cuck", "cucks", "trap", "carpet muncher", "camel jockey", "wog", "coon", "heeb", "kraut", "jap(s)", "wop", "beaner", "boong", "chink", "kafir", "kaffir", "raghead", "pikey", "femi-?nazi", "shit[- ]?lord", "dogshit", "a(ss|rse|es)([ -]?holes?)?", "((mother|motha|mutha)[ -]?)?f(u?c?k?k|\\*ck|\\*{0,2}k|\\*{3})(er|ed|ing|s)?", "s(h(i|ar?|\\*)t|\\*{3}|h\\*{2})(s|ter|e|ting)?", "b(i|\\*)o?(tch|\\*{3})(y|es)?" ]
 action: remove
 action_reason: "Reported and contains offensive content."
 modmail: |
