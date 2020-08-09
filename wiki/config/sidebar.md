@@ -97,8 +97,8 @@ For *Arena* matches:
 ---
 
 >#### **Community Resources**
-* [Discord!!](https://discord.gg/QU7dxED)
-* [Dark Souls Multi-Player Soul Level Range Calculator](https://mpql.net/tools/dark-souls/)
-* [Dark Souls II Multi-Player Soul Memory Range Calculator](https://mpql.net/tools/dark-souls-2/)
-* [Dark Souls III Multi-Player Level Range Calculator](https://mpql.net/tools/dark-souls-3/)
-* [Character Planner - Soulsplanner](https://soulsplanner.com/)
+* [Discord!!](https://discord.gg/dzfzYy)
+* [DSI SL Range Calc](https://mpql.net/tools/dark-souls/)
+* [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/)
+* [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/)
+* [Soulsplanner](https://soulsplanner.com/)
