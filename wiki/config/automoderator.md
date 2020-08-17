@@ -42,7 +42,7 @@ comment_stickied: true
 
 ### Redirect trading posts
 type: submission
-title (regex): ["dropping", "duping", "item", items, "mule", "transfer", "transfers", "trade"]
+title (regex): ["dropping", "duping", "item", "items", "mule", "transfer", "transfers", "trade"]
 action: remove
 action_reason: "submission about trading items."
 # modmail: |
@@ -286,6 +286,15 @@ action: remove
 action_reason: "offensive content."
 modmail: |
     The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+message: |
+    Your {{kind}} in /r/{{subreddit}} has been automatically removed due to offensive/banned content.
+    The word was: {{match-1}} - [Link to your {{kind}}]({{permalink}})
+
+    ---
+    If you have any criticism/advice regarding the subreddit please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
+
+    **We hope you enjoy your time here at r/SummonSign**
+message_subject: Your {{kind}} in /r/{{subreddit}} was removed.
 
 ---
 
