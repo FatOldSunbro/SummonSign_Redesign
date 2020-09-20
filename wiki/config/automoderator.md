@@ -285,7 +285,11 @@ title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "ho
 action: remove
 action_reason: "offensive content."
 modmail: |
-    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed due to banned words or phrases. The word was: {{match-1}}
+    Full text: {{body}}
+
+    /u/{{author}} posted a {{kind}} (containing the word **[{{match-1}}]**) in /r/{{subreddit}}.
+    
+    That was removed. Verify this action.
 message: |
     Your {{kind}} in /r/{{subreddit}} has been automatically removed due to offensive/banned content.
     The word was: {{match-1}} - [Link to your {{kind}}]({{permalink}})
@@ -307,12 +311,14 @@ action_reason: "Reported and contains offensive content."
 modmail: |
     Full text: {{body}}
 
-    /u/{{author}} posted a comment (containing the word [{{match}}]) that was reported and removed. Verify this action.
+    /u/{{author}} posted a {{kind}} (containing the word **[{{match-1}}]**) in /r/{{subreddit}}.
+    
+    That was reported and removed. Verify this action.
 
 ---
 
 ### Remove posts from forbidden domains
-domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com, prnt.sc, prntscr.com, tinypic.com]
+domain: [redgifs.com, webmshare.com, erome.com, pornhub.com, xvideos.com, xhamster.com, youporn.com, redtube.com, tube8.com, porndig.com, imgbb.com, prnt.sc, prntscr.com, tinypic.com, onlyfans.com]
 action: remove
 action_reason: "not allowed domain."
 comment: |
@@ -354,7 +360,7 @@ modmail: The above {{kind}} by /u/{{author}} was removed because it appears to b
 ---
 
 ### Slient remove post from the following users(shadowban):
-author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95]
+author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95, IttwasmeDIO]
 action: remove
 action_reason: "user is silenced."
 
