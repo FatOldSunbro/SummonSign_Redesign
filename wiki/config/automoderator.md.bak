@@ -12,20 +12,11 @@ type: submission
 action: remove
 action_reason: "missing request type in the title."
 comment: |
-    Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
-    > You must include in the **title** the *type of submission* **and** your *platform*.
+    > You must include the type of submission, one of either Help, Summon, Co-op or PvP
 
     > e.g., [*Help*][PS4][100] Abyss Watchers
-
-    ### Accepted values for *type of submission* and *platform*, one of either:
-    Type of submission | and | Platform
-    :---:|:---:|:----:
-    Help | - | PS4/PS3
-    Summon | - | RPCS3/PC/Steam
-    Co-op | - | Xbox/Xbone/Xbox1/Xbox360
-    PvP | - | Switch
-
 
     Please re-submit with the correct formatting. Thanks!
 comment_stickied: true
@@ -34,24 +25,15 @@ comment_stickied: true
 
 ### check for platform 
 type: submission
-~title (regex): ["ps4", "ps3", rpcs3, "pc", "steam", "xbox(360)?", "xbone", "xb(ox)?1", "switch"]
+~title (regex): ["ps4", "xbox", "xbone", "xb(ox)?1", "pc", "steam", "ps3", "switch"]
 action: remove
 action_reason: "missing platform in the title."
 comment: |
-    Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it does not meet our formatting guidelines
 
-    > You must include in the **title** the *type of submission* **and** your *platform*.
+    > You must include your platform, one of either PS4, PC/Steam, switch, or Xbox/Xbone/Xbox1
 
-    > e.g., [*Help*][PS4][100] Abyss Watchers
-
-    ### Accepted values for *type of submission* and *platform*, one of either:
-    Type of submission | and | Platform
-    :---:|:---:|:----:
-    Help | - | PS4/PS3
-    Summon | - | RPCS3/PC/Steam
-    Co-op | - | Xbox/Xbone/Xbox1/Xbox360
-    PvP | - | Switch
-
+    > e.g., [Help][*PS4*][100] Abyss Watchers
 
     Please re-submit with the correct formatting. Thanks!
 comment_stickied: true
@@ -60,7 +42,7 @@ comment_stickied: true
 
 ### Redirect trading posts
 type: submission
-title (regex): ["dropping", "duping", "item(s)?", "mule", "transfer(s)?", "trade(s)?"]
+title (regex): ["dropping", "duping", "item", "items", "mule", "transfer", "transfers", "trade"]
 action: remove
 action_reason: "submission about trading items."
 # modmail: |
@@ -88,13 +70,49 @@ comment_stickied: true
 
 ---
 
-### PLAYSTATION 4 TAGS
+# tag submissions
 type: submission
 title (regex): ["(ps4(.*)help|help(.*)ps4)"]
 set_flair:
     text: Help Me!
     css_class: help-me-ps4
     template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
+
+---
+
+type: submission
+title (regex): ["((pc|steam)(.*)help|help(.*)(pc|steam))"]
+set_flair:
+    text: Help Me!
+    css_class: help-me-steam
+    template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
+
+---
+
+type: submission
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
+set_flair:
+    text: Help Me!
+    css_class: help-me-xbox
+    template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
+
+---
+
+type: submission
+title (regex): ["(ps3(.*)help|help(.*)ps3)"]
+set_flair:
+    text: Help Me!
+    css_class: help-me-ps3
+    template_id: 910d3708-10d4-11e6-9bed-0e1e1ee7abbb
+
+---
+
+type: submission
+title (regex): ["(switch(.*)help|help(.*)switch)"]
+set_flair:
+    text: Help Me!
+    css_class: help-me-ps4
+    template_id: 98377df4-10d4-11e6-b9d0-0eb66bc8b02f
 
 ---
 
@@ -108,141 +126,11 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["(ps4(.*)co-?op|co-?op(.*)ps4)"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-ps4
-    template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
-
----
-
-type: submission
-title (regex): ["(ps4(.*)pvp|pvp(.*)ps4)"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-ps4
-    template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
-
----
-
-### PLAYSTATION 3 TAGS
-type: submission
-title (regex): ["(ps3(.*)help|help(.*)ps3)"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-ps4
-    template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
-
----
-
-type: submission
-title (regex): ["(ps3(.*)summon|summon(.*)ps3)"]
-set_flair:
-    text: Summon Me!
-    css_class: summon-me-ps4
-    template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
-
----
-
-type: submission
-title (regex): ["(ps3(.*)co-?op|co-?op(.*)ps3)"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-ps4
-    template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
-
----
-
-type: submission
-title (regex): ["(ps3(.*)pvp|pvp(.*)ps3)"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-ps4
-    template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
-
----
-
-### RPCS3 (PS3 emulation software)
-type: submission
-title (regex): ["(rpcs3(.*)help|help(.*)rpcs3)"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-steam
-    template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
-
----
-
-type: submission
-title (regex): ["(rpcs3(.*)summon|summon(.*)rpcs3)"]
-set_flair:
-    text: Summon Me!
-    css_class: summon-me-steam
-    template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
-
----
-
-type: submission
-title (regex): ["(rpcs3(.*)co-?op|co-?op(.*)rpcs3)"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-steam
-    template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
-
----
-
-type: submission
-title (regex): ["(rpcs3(.*)pvp|pvp(.*)rpcs3)"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-steam
-    template_id: 77528950-d551-11e8-b954-0ea613d466fc
-
----
-
-### PC STEAM TAGS
-type: submission
-title (regex): ["((pc|steam)(.*)help|help(.*)(pc|steam))"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-steam
-    template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
-
----
-
-type: submission
 title (regex): ["((pc|steam)(.*)summon|summon(.*)(pc|steam))"]
 set_flair:
     text: Summon Me!
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
-
----
-
-type: submission
-title (regex): ["((pc|steam)(.*)co-?op|co-?op(.*)(pc|steam))"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-steam
-    template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
-
----
-
-type: submission
-title (regex): ["((pc|steam)(.*)pvp|pvp(.*)(pc|steam))"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-steam
-    template_id: 77528950-d551-11e8-b954-0ea613d466fc
-
----
-
-### XBOX ONE SERIES TAGS
-type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-xbox
-    template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
 
 ---
 
@@ -256,67 +144,11 @@ set_flair:
 ---
 
 type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-xbox
-    template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
-
----
-
-type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-xbox
-    template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
-
----
-
-### XBOX360 TAGS
-type: submission
-title (regex): ["((xbox(360)?)(.*)help|help(.*)(xbox(360)?))"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-xbox
-    template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
-
----
-
-type: submission
-title (regex): ["((xbox(360)?)(.*)summon|summon(.*)(xbox(360)?))"]
+title (regex): ["(ps3(.*)summon|summon(.*)ps3)"]
 set_flair:
     text: Summon Me!
-    css_class: summon-me-xbox
-    template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
-
----
-
-type: submission
-title (regex): ["((xbox(360)?)(.*)co-?op|co-?op(.*)(xbox(360)?))"]
-set_flair:
-    text: Co-op with Me!
-    css_class: coop-xbox
-    template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
-
----
-
-type: submission
-title (regex): ["((xbox(360)?)(.*)pvp|pvp(.*)(xbox(360)?))"]
-set_flair:
-    text: Fight Me!
-    css_class: arena-xbox
-    template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
-
----
-
-### NINTENDO SWITCH TAGS
-type: submission
-title (regex): ["(switch(.*)help|help(.*)switch)"]
-set_flair:
-    text: Help Me!
-    css_class: help-me-ps4
-    template_id: 98377df4-10d4-11e6-b9d0-0eb66bc8b02f
+    css_class: summon-me-ps4
+    template_id: af1ae466-10d4-11e6-8cbd-0e1e1ee7abbb
 
 ---
 
@@ -330,11 +162,83 @@ set_flair:
 ---
 
 type: submission
+title (regex): ["(ps4(.*)co-?op|co-?op(.*)ps4)"]
+set_flair:
+    text: Co-op with Me!
+    css_class: coop-ps4
+    template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
+
+---
+
+type: submission
+title (regex): ["((pc|steam)(.*)co-?op|co-?op(.*)(pc|steam))"]
+set_flair:
+    text: Co-op with Me!
+    css_class: coop-steam
+    template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
+
+---
+
+type: submission
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
+set_flair:
+    text: Co-op with Me!
+    css_class: coop-xbox
+    template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
+
+---
+
+type: submission
+title (regex): ["(ps3(.*)co-?op|co-?op(.*)ps3)"]
+set_flair:
+    text: Co-op with Me!
+    css_class: coop-ps3
+    template_id: 51729266-d551-11e8-89be-0e856c2f8d14
+
+---
+
+type: submission
 title (regex): ["(switch(.*)co-?op|co-?op(.*)switch)"]
 set_flair:
     text: Co-op with Me!
     css_class: coop-switch
     template_id: 5a57d3e6-d551-11e8-8cde-0ed4b8f6e992
+
+---
+
+type: submission
+title (regex): ["(ps4(.*)pvp|pvp(.*)ps4)"]
+set_flair:
+    text: Fight Me!
+    css_class: arena-ps4
+    template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
+
+---
+
+type: submission
+title (regex): ["((pc|steam)(.*)pvp|pvp(.*)(pc|steam))"]
+set_flair:
+    text: Fight Me!
+    css_class: arena-steam
+    template_id: 77528950-d551-11e8-b954-0ea613d466fc
+
+---
+
+type: submission
+title (regex): ["((xbox|xb(ox)?1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
+set_flair:
+    text: Fight Me!
+    css_class: arena-xbox
+    template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
+
+---
+
+type: submission
+title (regex): ["(ps3(.*)pvp|pvp(.*)ps3)"]
+set_flair:
+    text: Fight Me!
+    css_class: arena-ps3
+    template_id: 885a2992-d551-11e8-8dc0-0e1a71db19ac
 
 ---
 
