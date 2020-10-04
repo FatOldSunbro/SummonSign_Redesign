@@ -14,18 +14,17 @@ action_reason: "missing request type in the title."
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
 
-    > You must include in the **title** the *type of submission* **and** your *platform*.
+    > You must include in the **title** the *[type of submission]* **and** your *[platform]*.
 
     > e.g., [*Help*][PS4][100] Abyss Watchers
 
-    ### Accepted values for *type of submission* and *platform*, one of either:
+    ### Accepted values for [type of submission] and [platform], one of either:
     Type of submission | and | Platform
     :---:|:---:|:----:
     Help | - | PS4/PS3
     Summon | - | RPCS3/PC/Steam
     Co-op | - | Xbox/Xbone/Xbox1/Xbox360
     PvP | - | Switch
-
 
     Please re-submit with the correct formatting. Thanks!
 comment_stickied: true
@@ -40,18 +39,17 @@ action_reason: "missing platform in the title."
 comment: |
     Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
 
-    > You must include in the **title** the *type of submission* **and** your *platform*.
+    > You must include in the **title** the *[type of submission]* **and** your *[platform]*.
 
     > e.g., [*Help*][PS4][100] Abyss Watchers
 
-    ### Accepted values for *type of submission* and *platform*, one of either:
+    ### Accepted values for [type of submission] and [platform], one of either:
     Type of submission | and | Platform
     :---:|:---:|:----:
     Help | - | PS4/PS3
     Summon | - | RPCS3/PC/Steam
     Co-op | - | Xbox/Xbone/Xbox1/Xbox360
     PvP | - | Switch
-
 
     Please re-submit with the correct formatting. Thanks!
 comment_stickied: true
