@@ -16,7 +16,7 @@ Additional Instructions as follows:
 
 > or
 
-> e.g., [*Help*][RPCS3][100][DeS] Tower Kinght
+> e.g., [*Help*][RPCS3][100][DeS] Tower Knight
 
 ### Accepted values for [*type of submission*] and [*platform*], one of either:
 Type of submission | and | Platform
@@ -28,6 +28,8 @@ PvP | - | Xbox/Xbone/Xbox1/Xbox360
  - | - | Switch
 
 And don't forget that while [Game], [Soul Level], [Weapon Upgrade Level],  Area,  Boss Name, or (Password) in the title *are optional* information; we strongly suggest that at least you add the [Game] and [Boss] to your title to make your thread easier to read for those that are willing to help.
+
+If you are playing DeS on the PS3 then I also suggest you include in the title the **Region** of your game that you are playing on. if you are playing DeS on RPCS3 region doesn't matter as cross region is implemented.
 
 ---
 
