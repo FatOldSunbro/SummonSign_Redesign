@@ -12,7 +12,7 @@ type: submission
 action: remove
 action_reason: "missing request type in the title."
 comment: |
-    Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it was missing *request type* in the title and so it does not meet our formatting guidelines:
 
     > You must include in the **title** the [*type of submission*] **and** your [*platform*].
 
@@ -37,7 +37,7 @@ type: submission
 action: remove
 action_reason: "missing platform in the title."
 comment: |
-    Hi, Your post has been automatically removed as it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it was missing *platform* in the title and so it does not meet our formatting guidelines:
 
     > You must include in the **title** the [*type of submission*] **and** your [*platform*].
 
