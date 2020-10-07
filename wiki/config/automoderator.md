@@ -93,6 +93,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-ps4
     template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
+overwrite_flair: true
 
 ---
 
@@ -102,6 +103,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
+overwrite_flair: true
 
 ---
 
@@ -111,6 +113,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-ps4
     template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
+overwrite_flair: true
 
 ---
 
@@ -120,6 +123,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-ps4
     template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
+overwrite_flair: true
 
 ---
 
@@ -130,6 +134,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-ps4
     template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
+overwrite_flair: true
 
 ---
 
@@ -139,6 +144,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
+overwrite_flair: true
 
 ---
 
@@ -148,6 +154,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-ps4
     template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
+overwrite_flair: true
 
 ---
 
@@ -157,6 +164,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-ps4
     template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
+overwrite_flair: true
 
 ---
 
@@ -167,6 +175,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-steam
     template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
+overwrite_flair: true
 
 ---
 
@@ -176,6 +185,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
+overwrite_flair: true
 
 ---
 
@@ -185,6 +195,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-steam
     template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
+overwrite_flair: true
 
 ---
 
@@ -194,6 +205,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-steam
     template_id: 77528950-d551-11e8-b954-0ea613d466fc
+overwrite_flair: true
 
 ---
 
@@ -204,6 +216,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-steam
     template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
+overwrite_flair: true
 
 ---
 
@@ -213,6 +226,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
+overwrite_flair: true
 
 ---
 
@@ -222,6 +236,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-steam
     template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
+overwrite_flair: true
 
 ---
 
@@ -231,6 +246,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-steam
     template_id: 77528950-d551-11e8-b954-0ea613d466fc
+overwrite_flair: true
 
 ---
 
@@ -241,6 +257,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-xbox
     template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
+overwrite_flair: true
 
 ---
 
@@ -250,6 +267,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
+overwrite_flair: true
 
 ---
 
@@ -259,6 +277,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-xbox
     template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
+overwrite_flair: true
 
 ---
 
@@ -268,6 +287,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-xbox
     template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
+overwrite_flair: true
 
 ---
 
@@ -278,6 +298,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-xbox
     template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
+overwrite_flair: true
 
 ---
 
@@ -287,6 +308,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
+overwrite_flair: true
 
 ---
 
@@ -296,6 +318,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-xbox
     template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
+overwrite_flair: true
 
 ---
 
@@ -305,6 +328,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-xbox
     template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
+overwrite_flair: true
 
 ---
 
@@ -315,6 +339,7 @@ set_flair:
     text: Help Me!
     css_class: help-me-ps4
     template_id: 98377df4-10d4-11e6-b9d0-0eb66bc8b02f
+overwrite_flair: true
 
 ---
 
@@ -324,6 +349,7 @@ set_flair:
     text: Summon Me!
     css_class: summon-me-switch
     template_id: d5689590-97f3-11e6-9f6a-0e985c31f9b0
+overwrite_flair: true
 
 ---
 
@@ -333,6 +359,7 @@ set_flair:
     text: Co-op with Me!
     css_class: coop-switch
     template_id: 5a57d3e6-d551-11e8-8cde-0ed4b8f6e992
+overwrite_flair: true
 
 ---
 
@@ -342,6 +369,7 @@ set_flair:
     text: Fight Me!
     css_class: arena-switch
     template_id: 8c07df9e-d551-11e8-990a-0e453627aeb0
+overwrite_flair: true
 
 ---
 
