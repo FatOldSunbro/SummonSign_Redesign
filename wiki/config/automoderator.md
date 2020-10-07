@@ -12,11 +12,11 @@ type: submission
 action: remove
 action_reason: "missing request type in the title."
 comment: |
-    Hi, Your post has been automatically removed as it was missing *request type* in the title and so it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it is missing [*request type*] in the title and so it does not meet our formatting guidelines:
 
     > You must include in the **title** the [*type of submission*] **and** your [*platform*].
 
-    > e.g., [*Help*][PS4][100] Abyss Watchers
+    > e.g., [*Help*][*PS4*][DS3] Darkeater Midir
 
     ### Accepted values for [*type of submission*] and [*platform*], one of either:
     Type of submission | and | Platform
@@ -37,11 +37,11 @@ type: submission
 action: remove
 action_reason: "missing platform in the title."
 comment: |
-    Hi, Your post has been automatically removed as it was missing *platform* in the title and so it does not meet our formatting guidelines:
+    Hi, Your post has been automatically removed as it is missing [*platform*] in the title and so it does not meet our formatting guidelines:
 
     > You must include in the **title** the [*type of submission*] **and** your [*platform*].
 
-    > e.g., [*Help*][PS4][100] Abyss Watchers
+    > e.g., [*Help*][*PS4*][DS3] Darkeater Midir
 
     ### Accepted values for [*type of submission*] and [*platform*], one of either:
     Type of submission | and | Platform
