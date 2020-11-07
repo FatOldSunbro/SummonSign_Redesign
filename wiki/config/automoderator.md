@@ -86,6 +86,21 @@ comment_stickied: true
 
 ---
 
+### Change flair to Duty fulfilled based on comment
+type: comment
+body: ["+complete"]
+is_top_level: true
+author:
+    is_submitter: true
+parent_submission:
+    set_flair:
+        text: Duty Fulfilled!
+        css_class: duty-fulfilled
+        template_id: 25213842-1029-11e6-ba76-0ecc83f85b2b
+    overwrite_flair: true
+
+---
+
 ### PLAYSTATION 4 TAGS
 type: submission
 title (regex): ["(ps4(.*)help|help(.*)ps4)"]
