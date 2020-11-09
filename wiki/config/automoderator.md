@@ -105,7 +105,7 @@ parent_submission:
 type: submission
 title (regex): ["(ps4(.*)help|help(.*)ps4)"]
 set_flair:
-    text: Help Me!
+    text: ":psx: Help Me!"
     css_class: help-me-ps4
     template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
 overwrite_flair: true
@@ -115,7 +115,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps4(.*)summon|summon(.*)ps4)"]
 set_flair:
-    text: Summon Me!
+    text: ":psx: Summon Me!"
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
 overwrite_flair: true
@@ -125,7 +125,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps4(.*)co-?op|co-?op(.*)ps4)"]
 set_flair:
-    text: Co-op with Me!
+    text: ":psx: Co-op with Me!"
     css_class: coop-ps4
     template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
 overwrite_flair: true
@@ -135,7 +135,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps4(.*)pvp|pvp(.*)ps4)"]
 set_flair:
-    text: Fight Me!
+    text: ":psx: Fight Me!"
     css_class: arena-ps4
     template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
 overwrite_flair: true
@@ -146,7 +146,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps3(.*)help|help(.*)ps3)"]
 set_flair:
-    text: Help Me!
+    text: ":psx: Help Me!"
     css_class: help-me-ps4
     template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
 overwrite_flair: true
@@ -156,7 +156,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps3(.*)summon|summon(.*)ps3)"]
 set_flair:
-    text: Summon Me!
+    text: ":psx: Summon Me!"
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
 overwrite_flair: true
@@ -166,7 +166,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps3(.*)co-?op|co-?op(.*)ps3)"]
 set_flair:
-    text: Co-op with Me!
+    text: ":psx: Co-op with Me!"
     css_class: coop-ps4
     template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
 overwrite_flair: true
@@ -176,7 +176,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(ps3(.*)pvp|pvp(.*)ps3)"]
 set_flair:
-    text: Fight Me!
+    text: ":psx: Fight Me!"
     css_class: arena-ps4
     template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
 overwrite_flair: true
@@ -187,7 +187,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(rpcs3(.*)help|help(.*)rpcs3)"]
 set_flair:
-    text: Help Me!
+    text: ":pc: Help Me!"
     css_class: help-me-steam
     template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
 overwrite_flair: true
@@ -197,7 +197,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(rpcs3(.*)summon|summon(.*)rpcs3)"]
 set_flair:
-    text: Summon Me!
+    text: ":pc: Summon Me!"
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
 overwrite_flair: true
@@ -207,7 +207,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(rpcs3(.*)co-?op|co-?op(.*)rpcs3)"]
 set_flair:
-    text: Co-op with Me!
+    text: ":pc: Co-op with Me!"
     css_class: coop-steam
     template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
 overwrite_flair: true
@@ -217,7 +217,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(rpcs3(.*)pvp|pvp(.*)rpcs3)"]
 set_flair:
-    text: Fight Me!
+    text: ":pc: Fight Me!"
     css_class: arena-steam
     template_id: 77528950-d551-11e8-b954-0ea613d466fc
 overwrite_flair: true
@@ -228,7 +228,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((pc|steam)(.*)help|help(.*)(pc|steam))"]
 set_flair:
-    text: Help Me!
+    text: ":pc: Help Me!"
     css_class: help-me-steam
     template_id: 85941c70-10d4-11e6-9bed-0e1e1ee7abbb
 overwrite_flair: true
@@ -238,7 +238,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((pc|steam)(.*)summon|summon(.*)(pc|steam))"]
 set_flair:
-    text: Summon Me!
+    text: ":pc: Summon Me!"
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
 overwrite_flair: true
@@ -248,7 +248,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((pc|steam)(.*)co-?op|co-?op(.*)(pc|steam))"]
 set_flair:
-    text: Co-op with Me!
+    text: ":pc: Co-op with Me!"
     css_class: coop-steam
     template_id: f0a7871c-97f3-11e6-ae07-0e985c31f9b0
 overwrite_flair: true
@@ -258,7 +258,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((pc|steam)(.*)pvp|pvp(.*)(pc|steam))"]
 set_flair:
-    text: Fight Me!
+    text: ":pc: Fight Me!"
     css_class: arena-steam
     template_id: 77528950-d551-11e8-b954-0ea613d466fc
 overwrite_flair: true
@@ -269,7 +269,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
-    text: Help Me!
+    text: ":xbox: Help Me!"
     css_class: help-me-xbox
     template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
 overwrite_flair: true
@@ -279,7 +279,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox|xb(ox)?1|xbone)(.*)summon|summon(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
-    text: Summon Me!
+    text: ":xbox: Summon Me!"
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
 overwrite_flair: true
@@ -289,7 +289,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox|xb(ox)?1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
-    text: Co-op with Me!
+    text: ":xbox: Co-op with Me!"
     css_class: coop-xbox
     template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
 overwrite_flair: true
@@ -299,7 +299,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox|xb(ox)?1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
-    text: Fight Me!
+    text: ":xbox: Fight Me!"
     css_class: arena-xbox
     template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
 overwrite_flair: true
@@ -310,7 +310,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox(360)?)(.*)help|help(.*)(xbox(360)?))"]
 set_flair:
-    text: Help Me!
+    text: ":xbox: Help Me!"
     css_class: help-me-xbox
     template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
 overwrite_flair: true
@@ -320,7 +320,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox(360)?)(.*)summon|summon(.*)(xbox(360)?))"]
 set_flair:
-    text: Summon Me!
+    text: ":xbox: Summon Me!"
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
 overwrite_flair: true
@@ -330,7 +330,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox(360)?)(.*)co-?op|co-?op(.*)(xbox(360)?))"]
 set_flair:
-    text: Co-op with Me!
+    text: ":xbox: Co-op with Me!"
     css_class: coop-xbox
     template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
 overwrite_flair: true
@@ -340,7 +340,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["((xbox(360)?)(.*)pvp|pvp(.*)(xbox(360)?))"]
 set_flair:
-    text: Fight Me!
+    text: ":xbox: Fight Me!"
     css_class: arena-xbox
     template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
 overwrite_flair: true
@@ -351,7 +351,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(switch(.*)help|help(.*)switch)"]
 set_flair:
-    text: Help Me!
+    text: ":switch: Help Me!"
     css_class: help-me-ps4
     template_id: 98377df4-10d4-11e6-b9d0-0eb66bc8b02f
 overwrite_flair: true
@@ -361,7 +361,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(switch(.*)summon|summon(.*)switch)"]
 set_flair:
-    text: Summon Me!
+    text: ":switch: Summon Me!"
     css_class: summon-me-switch
     template_id: d5689590-97f3-11e6-9f6a-0e985c31f9b0
 overwrite_flair: true
@@ -371,7 +371,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(switch(.*)co-?op|co-?op(.*)switch)"]
 set_flair:
-    text: Co-op with Me!
+    text: ":switch: Co-op with Me!"
     css_class: coop-switch
     template_id: 5a57d3e6-d551-11e8-8cde-0ed4b8f6e992
 overwrite_flair: true
@@ -381,7 +381,7 @@ overwrite_flair: true
 type: submission
 title (regex): ["(switch(.*)pvp|pvp(.*)switch)"]
 set_flair:
-    text: Fight Me!
+    text: ":switch: Fight Me!"
     css_class: arena-switch
     template_id: 8c07df9e-d551-11e8-990a-0e453627aeb0
 overwrite_flair: true
@@ -461,17 +461,6 @@ action_reason: "not allowed domain."
 comment: |
     Your submission was automatically removed because {{domain}} is not an approved site.
 comment_stickied: true
-
----
-
-### Emoji ban
-title (regex, includes): ["(?#Zero Width Joiner)[\u200d]", "(?#Box Drawing)[\u2500-\u257f]+", "(?#Miscellaneous Symbols)[\u2600-\u26ff]", "(?#Dingbats)[\u2700-\u27ff]", "(?#Braille)[\u2800-\u28ff]", "(?#!Katakana Letter Tu)[\u30c4]", "(?#Various Emoji)[\U0001F000-\U0001FAFF]"]
-action: remove
-action_reason: "not allowed emoji/character."
-comment: |
-    Your [{{kind}}]({{permalink}} in /r/{{subreddit}}) has been automatically removed because you used an emoji or other symbol.
-
-    Please retry your {{kind}} using text characters only.
 
 ---
 
