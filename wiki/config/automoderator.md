@@ -21,9 +21,9 @@ comment: |
     ### Accepted values for [*type of submission*] and [*platform*], one of either:
     Type of submission | and | Platform
     :---:|:---:|:----:
-    Help | - | PS4/PS3
-    Summon | - | RPCS3/PC/Steam
-    Co-op | - | Xbox/Xbone/Xbox1/Xbox360
+    Help | - | PS5/PS4/PS3
+    Summon | - | RPCS3/PC
+    Co-op | - | XBX/Xbox/Xbone/Xbox360
     PvP | - | Switch
 
     Please re-submit with the correct formatting. Thanks!
@@ -46,9 +46,9 @@ comment: |
     ### Accepted values for [*type of submission*] and [*platform*], one of either:
     Type of submission | and | Platform
     :---:|:---:|:----:
-    Help | - | PS4/PS3
-    Summon | - | RPCS3/PC/Steam
-    Co-op | - | Xbox/Xbone/Xbox1/Xbox360
+    Help | - | PS5/PS4/PS3
+    Summon | - | RPCS3/PC
+    Co-op | - | XBX/Xbox/Xbone/Xbox360
     PvP | - | Switch
 
     Please re-submit with the correct formatting. Thanks!
@@ -94,10 +94,51 @@ author:
     is_submitter: true
 parent_submission:
     set_flair:
-        text: Duty Fulfilled!
+        text: ":sunbro: Duty Fulfilled!"
         css_class: duty-fulfilled
         template_id: 25213842-1029-11e6-ba76-0ecc83f85b2b
     overwrite_flair: true
+
+---
+
+### PLAYSTATION 5 TAGS
+type: submission
+title (regex): ["(ps5(.*)help|help(.*)ps5)"]
+set_flair:
+    text: ":psx: Help Me!"
+    css_class: help-me-ps4
+    template_id: 7e08ee68-10d4-11e6-b252-0e761361da27
+overwrite_flair: true
+
+---
+
+type: submission
+title (regex): ["(ps5(.*)summon|summon(.*)ps5)"]
+set_flair:
+    text: ":psx: Summon Me!"
+    css_class: summon-me-ps4
+    template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
+overwrite_flair: true
+
+---
+
+type: submission
+title (regex): ["(ps5(.*)co-?op|co-?op(.*)ps5)"]
+set_flair:
+    text: ":psx: Co-op with Me!"
+    css_class: coop-ps4
+    template_id: ea1091aa-97f3-11e6-a160-0e7eefd57056
+overwrite_flair: true
+
+---
+
+type: submission
+title (regex): ["(ps5(.*)pvp|pvp(.*)ps5)"]
+set_flair:
+    text: ":psx: Fight Me!"
+    css_class: arena-ps4
+    template_id: 6cf67fac-d551-11e8-98f2-0edce2a7e600
+overwrite_flair: true
 
 ---
 
@@ -264,8 +305,48 @@ set_flair:
 overwrite_flair: true
 
 ---
+### XBOX SERIES X/S TAGS
+type: submission
+title (regex): ["((xbx|xbs)(.*)help|help(.*)(xbx|xbs))"]
+set_flair:
+    text: ":xbox: Help Me!"
+    css_class: help-me-xbox
+    template_id: 8bda4208-10d4-11e6-8ffe-0ecc83f85b2b
+overwrite_flair: true
 
-### XBOX ONE SERIES TAGS
+---
+
+type: submission
+title (regex): ["((xbx|xbs)(.*)summon|summon(.*)(xbx|xbs))"]
+set_flair:
+    text: ":xbox: Summon Me!"
+    css_class: summon-me-xbox
+    template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
+overwrite_flair: true
+
+---
+
+type: submission
+title (regex): ["((xbx|xbs)(.*)co-?op|co-?op(.*)(xbx|xbs))"]
+set_flair:
+    text: ":xbox: Co-op with Me!"
+    css_class: coop-xbox
+    template_id: 4668aaae-d551-11e8-b7b4-0e8d2f93592c
+overwrite_flair: true
+
+---
+
+type: submission
+title (regex): ["((xbx|xbs)(.*)pvp|pvp(.*)(xbx|xbs))"]
+set_flair:
+    text: ":xbox: Fight Me!"
+    css_class: arena-xbox
+    template_id: 7f9b42dc-d551-11e8-ad02-0eb636c8d21a
+overwrite_flair: true
+
+---
+
+### XBOX ONE TAGS
 type: submission
 title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
 set_flair:
