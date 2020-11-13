@@ -33,7 +33,7 @@ comment_stickied: true
 
 ### check for platform 
 type: submission
-~title (regex): ["ps4", "ps3", rpcs3, "pc", "steam", "xbox(360)?", "xbone", "xb(ox)?1", "switch"]
+~title (regex): ["ps5", "ps4", "ps3", "rpcs3", "pc", "steam", "xbx", "xbs", "xbox(360)?", "xbone", "xb(ox)?1", "switch"]
 action: remove
 action_reason: "missing platform in the title."
 comment: |
