@@ -98,6 +98,19 @@ parent_submission:
         css_class: duty-fulfilled
         template_id: 25213842-1029-11e6-ba76-0ecc83f85b2b
     overwrite_flair: true
+comment: |
+    {{author}} you have successfully changed your [submission's]({{permalink}}) flair to Duty Fulfilled!
+
+---
+
+### Change flair to Duty fulfilled based on comment
+type: comment
+body: ["+complete"]
+is_top_level: true
+author:
+    is_submitter: false
+comment: |
+    {{author}} is not in the sudoers file. This incident will be reported!! (´・＿・`)
 
 ---
 
@@ -119,6 +132,7 @@ set_flair:
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -160,6 +174,7 @@ set_flair:
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -201,6 +216,7 @@ set_flair:
     css_class: summon-me-ps4
     template_id: 9d8fb41a-10d4-11e6-bb10-0e5c663c2313
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -242,6 +258,7 @@ set_flair:
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -283,6 +300,7 @@ set_flair:
     css_class: summon-me-steam
     template_id: a27cf4f6-10d4-11e6-a99e-0e3eeff20e29
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -323,6 +341,7 @@ set_flair:
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -364,6 +383,7 @@ set_flair:
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -405,6 +425,7 @@ set_flair:
     css_class: summon-me-xbox
     template_id: a7aebc20-10d4-11e6-8151-0e462b3a24fb
 overwrite_flair: true
+priority: -1
 
 ---
 
@@ -446,6 +467,7 @@ set_flair:
     css_class: summon-me-switch
     template_id: d5689590-97f3-11e6-9f6a-0e985c31f9b0
 overwrite_flair: true
+priority: -1
 
 ---
 
