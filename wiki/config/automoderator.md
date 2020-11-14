@@ -99,18 +99,18 @@ parent_submission:
         template_id: 25213842-1029-11e6-ba76-0ecc83f85b2b
     overwrite_flair: true
 comment: |
-    {{author}} you have successfully changed your [submission's]({{permalink}}) flair to Duty Fulfilled!
+    /u/{{author}} you have successfully changed your [submission's]({{permalink}}) flair to Duty Fulfilled!
 
 ---
 
-### Change flair to Duty fulfilled based on comment
+### Warning message for user without apropriate permission
 type: comment
 body: ["+complete"]
 is_top_level: true
 author:
     is_submitter: false
 comment: |
-    {{author}} is not in the sudoers file. This incident will be reported!! (´・＿・`)
+    /u/{{author}} is not in the sudoers file. This incident will be reported!! (´・＿・`)
 
 ---
 
