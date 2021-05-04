@@ -47,6 +47,8 @@ This subreddit is dedicated to online multiplayer in the Souls series and was ma
 * Award +karma to the people that helped you!(see below how).
 >
 * When complete, please tag your post *Duty Fulfilled!* to let others know you don't need help/aren't available for summons/co-op/arena matches any longer.
+>
+For more detailed information please [read here](https://www.reddit.com/r/SummonSign/comments/jskucr/faq_how_to_post_to_rsummonsign/)
 
 --- 
 
@@ -62,6 +64,8 @@ For *Co-op* requests:
 For *Arena* matches:
 >
 * [**PvP**][**PS4/PC/Xbox/Switch**][Soul Level][Weapon Upgrade Level](Password)
+>
+For more detailed information please [read here](https://www.reddit.com/r/SummonSign/comments/jskucr/faq_how_to_post_to_rsummonsign/)
 
 ---
 
@@ -73,6 +77,8 @@ For *Arena* matches:
 * You can only award karma to a comment reply
 >
 * The player granting karma must either be the same as the post submitter (for Summon/Co-op requests), or, the comment being replied to must have been made by the submitter (for Help requests)
+>
+For more detailed information please [read here](https://www.reddit.com/r/SummonSign/comments/jskucr/faq_how_to_post_to_rsummonsign/)
 
 ---
 
@@ -88,6 +94,8 @@ For *Arena* matches:
 * Set "Voice chat" to "Allowed" (if desired).
 >
 * Make sure you let your new friend(s) know if they will see your Online ID or character name (this will help avoid confusion if someone else happens to use the same password).
+>
+For more detailed information please [read here](https://www.reddit.com/r/SummonSign/comments/jskucr/faq_how_to_post_to_rsummonsign/)
 
 ---
 
