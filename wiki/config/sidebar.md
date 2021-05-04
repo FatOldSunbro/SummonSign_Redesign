@@ -124,3 +124,14 @@ For *Arena* matches:
 >> * [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/)
 >> * [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/)
 >> * [Soulsplanner](https://soulsplanner.com/)
+
+---
+
+>#### **Related Subreddits**
+[Demon's Souls](/r/demonssouls#rel)
+[Dark Souls](/r/darksouls#rel)
+[Dark Souls 2](/r/darksouls2#rel)
+[Dark Souls 3](/r/darksouls3#rel)
+
+---
+[This subreddit is night mode compatible](#/RES_SR_Config/NightModeCompatible)
