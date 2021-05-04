@@ -1,5 +1,5 @@
 >#### **Welcome to Summon Sign**
-This subreddit is dedicated to online multiplayer in the Dark Souls series and was made for you to:
+This subreddit is dedicated to online multiplayer in the Souls series and was made for you to:
 >
 * Request help with a boss or area
 >
@@ -11,26 +11,57 @@ This subreddit is dedicated to online multiplayer in the Dark Souls series and w
 
 ---
 
->#### **Community Rules**
+>#### **SummonSign Rules**
 >
-* Be respectful at all times
+1 **Be respectful of others and their opinions. Follow reddiquette.**
+>>>Be most excellent to your fellow redditors! Bigotry of any form is not allowed. Please follow the [reddiquette](https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/reddiquette)
 >
-* Harassing, judging, demeaning, or making fun of others for their help request will result in an immediate and permanent ban
- 
+2 **Harassing, judging, demeaning, or making fun of others for their help request will result in an immediate and permanent ban.**
+>>>Do not personally attack or make fun of other users for their request. Unhelpful comments such as "git gud" may lead to a permaban.
+>
+3 **Submissions must follow our Title Field Fo  rmat Requirements.**
+>>>Submission titles must follow our [Title Field Format Requirements](https://www.reddit.com/r/SummonSign/comments/jskucr/faq_how_to_post_to_rsummonsign/)(You can see how to format the title down below), and must include at least the *request type* and *platform*. All others will be removed by the bot!
+>
+4 **No Transactions.**
+>>>Is strictly forbidden to charge compensation(in any form such as monetary, donations or awards) in exchange of help!
+>
+5 **All submissions must relate to SummonSign.**
+>>>All submissions must relate to *this subreddit*, offtopic submissions such as discussion topics and trading items requests will be removed.
+>
+6 **Do not spam or self-promote.**
+>>>Do not spam submissions, this includes links to social media, personal discord servers and/or youtube channels.
+>
+8 **Do not request/post sources linking to unlicensed content aggregation sites.**
+>>>No sales, sales links, or soliciting donations. Exceptions must be approved by the moderators.
+>
+9 **Do not advocate breaking the game's TOS.**
+>>>No encouraging breaking the game’s terms of service. This includes hacking and cheating.
+
 ---
+
+>#### **SummonSign etiquette**
+* Submission titles *must* use the format below, and *must* include at least the request type and platform. All others will be removed.
+>
+* Add additional information as necessary in the body of your post (e.g., 'Looking for teammates in the arena').
+>
+* Award +karma to the people that helped you!(see below how).
+>
+* When complete, please tag your post *Duty Fulfilled!* to let others know you don't need help/aren't available for summons/co-op/arena matches any longer.
+
+--- 
 
 >#### **How to Format Submission Titles**
 For requests or offers of *Help*:
 >
-* [**Help/Summon**][**PS4/PC/Xbox**][Soul Level][Weapon Upgrade Level] Area or Boss Name (Password)
+* [**Help/Summon**][**PS4/PC/Xbox/Switch**][Soul Level][Weapon Upgrade Level] Area or Boss Name (Password)
 >
 For *Co-op* requests:
 >
-* [**Co-op**][**PS4/PC/Xbox**][Soul Level][Weapon Upgrade Level] Area or Boss Name (Password)
+* [**Co-op**][**PS4/PC/Xbox/Switch**][Soul Level][Weapon Upgrade Level] Area or Boss Name (Password)
 >
 For *Arena* matches:
 >
-* [**PvP**][**PS4/PC/Xbox**][Soul Level][Weapon Upgrade Level](Password)
+* [**PvP**][**PS4/PC/Xbox/Switch**][Soul Level][Weapon Upgrade Level](Password)
 
 ---
 
@@ -45,24 +76,16 @@ For *Arena* matches:
 
 ---
 
->#### **Participation Rules**
-* Submission titles *must* use the format above, and *must* include at least the request type and platform. All others will be removed.
+>#### **Recommended In-Game Settings**
+* Set "Cross-region play" to "Matchmaking ON" or "GLOBAL".
 >
-* Add additional information as necessary in the body of your post (e.g., 'Looking for teammates in the arena').
+* Make sure your password matches.
 >
-* When complete, please tag your post *Duty Fulfilled!* to let others know you don't need help/aren't available for summons/co-op/arena matches any longer.
+* Make sure you are Embered or in Human Form.
 >
-
---- 
-
->#### **In-Game Settings**
-* Set "Cross-region play" to "Matchmaking ON"
+* Set "Summon sign visibility" to "Unrestricted".
 >
-* Make sure your password matches
->
-* Set "Summon sign visibility" to "Unrestricted"
->
-* Set "Voice chat" to "Allowed" (if desired)
+* Set "Voice chat" to "Allowed" (if desired).
 >
 * Make sure you let your new friend(s) know if they will see your Online ID or character name (this will help avoid confusion if someone else happens to use the same password).
 
@@ -86,19 +109,18 @@ For *Arena* matches:
 >> * [Co-op with Me! (PC)](/r/summonsign/search?q=flair%3Aco%2Dop+%28pc%20OR%20steam%29&sort=new&restrict_sr=on#filter3)
 >> * [Co-op with Me! (XB1)](/r/summonsign/search?q=flair%3Aco%2Dop+%28xbox%20OR%20xbone%20OR%20xb1%29&sort=new&restrict_sr=on#filter3)
 >> * [Co-op with Me! (PS3)](/r/summonsign/search?q=flair%3Aco%2Dop+ps3&sort=new&restrict_sr=on#filter3)
->> * [Co-op with Me! (switch)](/r/summonsign/search?q=flair%3Aco%2Dop+switch&sort=new&restrict_sr=on#filter3)
+>> * [Co-op with Me! (Switch)](/r/summonsign/search?q=flair%3Aco%2Dop+switch&sort=new&restrict_sr=on#filter3)
 >> * [Fight Me!](/r/summonsign/search?q=flair%3Aarena&restrict_sr=on&sort=new&t=all#filter4)
 >> * [Fight Me! (PS4)](/r/summonsign/search?q=flair%3Aarena+ps4&sort=new&restrict_sr=on#filter4)
 >> * [Fight Me! (PC)](/r/summonsign/search?q=flair%3Aarena+%28pc%20OR%20steam%29&sort=new&restrict_sr=on#filter4)
 >> * [Fight Me! (XB1)](/r/summonsign/search?q=flair%3Aarena+%28xbox%20OR%20xbone%20OR%20xb1%29&sort=new&restrict_sr=on#filter4)
 >> * [Fight Me! (PS3)](/r/summonsign/search?q=flair%3Aarena+ps3&sort=new&restrict_sr=on#filter4)
->> * [Fight Me! (switch)](/r/summonsign/search?q=flair%3Aarena+switch&sort=new&restrict_sr=on#filter4)
+>> * [Fight Me! (Switch)](/r/summonsign/search?q=flair%3Aarena+switch&sort=new&restrict_sr=on#filter4)
 
 ---
 
 >#### **Community Resources**
-* [Discord!!](https://discord.gg/dzfzYy)
-* [DSI SL Range Calc](https://mpql.net/tools/dark-souls/)
-* [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/)
-* [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/)
-* [Soulsplanner](https://soulsplanner.com/)
+>> * [DSI SL Range Calc](https://mpql.net/tools/dark-souls/)
+>> * [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/)
+>> * [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/)
+>> * [Soulsplanner](https://soulsplanner.com/)
