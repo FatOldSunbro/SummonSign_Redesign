@@ -6,6 +6,6 @@ If you have any criticism/suggestion regarding the subreddit please contact the 
 ---
 Thank you for your understanding and co-operation in creating an enjoyable gaming environment for all.
 
-If you have any trouble please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
+If you have any trouble please contact the moderators: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
 
  Have a great day!
