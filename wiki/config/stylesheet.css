@@ -998,8 +998,8 @@ div.titlebox span.word {display: none;}
 
 .side .md blockquote blockquote {background-color: transparent;border: none;}
 .side .md blockquote blockquote ul {list-style-type: none;margin-left: -40px;}
-.side .md blockquote blockquote ul li {width: calc(50% - 2px);display: inline-block;text-align: center;}
-.side .md blockquote blockquote ul li a {height: 24px;width: 125px;display: inline-block;padding-top: 8px;text-align: center;vertical-align: middle;}
+.side .md blockquote blockquote ul li {width: calc(50% - 2px);display: inline-block;text-align: center;vertical-align: middle;}
+.side .md blockquote blockquote ul li a {height: 24px;width: 125px;display: flex;justify-content: center;align-items: center;padding: 6px 0;}
 
 .side .md a[href$="#filter1"] {margin-bottom: 10px;}
 .side .md a[href$="#filter2"] {margin-bottom: 10px;}
