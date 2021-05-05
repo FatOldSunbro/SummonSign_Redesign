@@ -210,6 +210,7 @@ a#header-img-a:hover { opacity: 1; background-position: 0 0; }
 .side .md a[href$="#filter2"] {background-color: #F80;color: #fff;}
 .side .md a[href$="#filter3"] {background-color: #fff;color: #47484D;border:1px solid #3B3C40;}
 .side .md a[href$="#filter4"] {background-color: #760000;color: #fff;border:1px solid #982a22;}
+.side .md a[href$="#filter5"] {background-color: #228822;color: #fff;border:1px solid #378f37;}
 
 /*################
 # 0.5) User Flair #
@@ -217,15 +218,275 @@ a#header-img-a:hover { opacity: 1; background-position: 0 0; }
 
 /* karma flair */
 
+
 .flair {
   font-weight: lighter;
   font-size: x-small;
-  color: rgb(157,132,75);
-  text-transform: uppercase;
-  background-color: #fff;
   padding: 2px 4px;
   border-radius: 5px;
   border: 1px solid rgb(157,132,75) !important;
+} 
+
+.flair-green{ color:green;background-color:#DBF7CD;}
+.flair-red{ color:red;background-color:#F7CDCD}
+
+/* CHANGE FLAIR INSTRUCTIONS */
+.flairtoggle {
+  visibility: hidden;
+  font-size: 0px !important;
+}
+.flairtoggle::after {
+  visibility: visible;
+  font-size: 12px !important;
+  content: "Add your own flair to your name:";
+}
+.flairtoggle input {
+  visibility: visible !important;
+}
+
+@-webkit-keyframes mod_animation {
+	0% { -webkit-transform: scale(1); color:blue; }
+	30% { -webkit-transform: scale(1);  }
+	40% { -webkit-transform: scale(1.08);  }
+	50% { -webkit-transform: scale(1); color:red; }
+	60% { -webkit-transform: scale(1);  }
+	70% { -webkit-transform: scale(1.05);  }
+	80% { -webkit-transform: scale(1);  }
+	100% { -webkit-transform: scale(1); color:blue; }
+}
+@keyframes mod_animation {
+	0% { transform: scale(1); color:blue; }
+	30% { transform: scale(1);  }
+	40% { transform: scale(1.08);  }
+	50% { transform: scale(1); color:red; }
+	60% { transform: scale(1);  }
+	70% { transform: scale(1.05);  }
+	80% { transform: scale(1);  }
+	100% { transform: scale(1); color:blue; }
+}
+
+.flair-mod{
+	-webkit-animation-name: 'mod_animation';
+	-webkit-animation-duration: 5000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'mod_animation';
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+        background-color:transparent;
+}
+
+@-webkit-keyframes tier2_animation {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.08); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes tier2_animation {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.08); }
+	100% { transform: scale(1); }
+}
+
+.flair-tier2{
+
+	-webkit-animation-name: 'tier2_animation';
+	-webkit-animation-duration: 5000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'tier2_animation';
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+        color:green;
+        background-color:#DBF7CD
+}
+
+@-webkit-keyframes tier3_animation {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.08); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes tier3_animation {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.08); }
+	100% { transform: scale(1); }
+}
+
+.flair-tier3{
+
+	-webkit-animation-name: 'tier3_animation';
+	-webkit-animation-duration: 4000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'tier3_animation';
+	animation-duration: 4000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+        color:#A6389D;
+        background-color:#F2EE74
+}
+
+@-webkit-keyframes tier4_animation {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes tier4_animation {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+.flair-tier4{
+
+	-webkit-animation-name: 'tier4_animation';
+	-webkit-animation-duration: 3000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'tier4_animation';
+	animation-duration: 3000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+        color:#B300FA;
+        background-color:#FAAF00
+}
+
+@-webkit-keyframes tier5_animation {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes tier5_animation {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+.flair-tier5{
+
+	-webkit-animation-name: 'tier5_animation';
+	-webkit-animation-duration: 2000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'tier5_animation';
+	animation-duration: 2000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+        color:#DB1414;
+        background-color:#EB9738
+}
+
+@-webkit-keyframes tier6_animation {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes tier6_animation {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+.flair-tier6{
+
+	-webkit-animation-name: 'tier6_animation';
+	-webkit-animation-duration: 1000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: 'tier6_animation';
+	animation-duration: 1000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+        color:#FFD900;
+        -webkit-box-shadow: 0px 0px 5px 0px #FF6726;
+        box-shadow: 0px 0px 5px 0px #FF6726;
+        background-color:#FF6200
+}
+
+@-webkit-keyframes tier7_animation{
+  from{
+      -webkit-text-shadow:0px 0px 10px #E83348,
+      0px 0px 10px #E83348, 
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 50px #E83348,
+      0px 0px 50px #E83348,
+      0px 0px 50px #FFD900,
+      0px 0px 150px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px -10px 100px #FFD900,
+      0px -10px 100px #FFD900;}
+}
+
+@keyframes tier7_animation{
+  from{
+      text-shadow:0px 0px 10px #E83348,
+      0px 0px 10px #E83348, 
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 25px #E83348,
+      0px 0px 50px #E83348,
+      0px 0px 50px #E83348,
+      0px 0px 50px #FFD900,
+      0px 0px 150px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px 10px 100px #FFD900,
+      0px -10px 100px #FFD900,
+      0px -10px 100px #FFD900;}
+}
+
+.flair-tier7{
+        -webkit-animation:tier7_animation 2s ease-out infinite alternate;
+        animation:tier7_animation 2s ease-out infinite alternate;
+        -webkit-text-shadow:0px 0px 2px #E83348, 0px 0px 3px #FFD900;
+        text-shadow:0px 0px 2px #E83348, 0px 0px 3px #FFD900;
+
+
+        color:#FFFFFF;
+        -webkit-box-shadow: 0px 0px 3px 0px #E83348;
+        box-shadow: 0px 0px 3px 0px #E83348;
+        background-color:#000000
 }
 
 /*###########################
@@ -714,9 +975,22 @@ div.titlebox span.word {display: none;}
 
 .side a[href="/r/demonssouls#rel"] {background-position: 0 -300px !important;}
 .side a[href="/r/darksouls#rel"] {background-position: 0 0 !important;}
-.side a[href="/r/darksouls2#rel"] {background-position: 0 -350px !important;}
-.side a[href="/r/darksouls3#rel"] {background-position: 0 -550px !important;}
 .side a[href="/r/darksoulspvp#rel"] {background-position: 0 -50px !important;}
+.side a[href="/r/darksoulsbuilds#rel"] {background-position: 0 -100px !important;}
+.side a[href="/r/darksoulshelp#rel"] {background-position: 0 -150px !important;}
+.side a[href="/r/darksoulsmods#rel"] {background-position: 0 -200px !important;}
+.side a[href="/r/darksouls2#rel"] {background-position: 0 -350px !important;}
+.side a[href="/r/fashionsouls#rel"] {background-position: 0 -500px !important;}
+.side a[href="/r/saltandsanctuary#rel"] {background-position: 0 -450px !important;}
+.side a[href="/r/bloodborne#rel"] {background-position: 0 -400px !important;}
+.side a[href="/r/darksouls3#rel"] {background-image: url(%%ds3-logo%%) !important; background-position: 0 0 !important;}
+.side a[href="/r/snuggly#rel"] {background-image: url(%%snuggly%%) !important; background-position: 0 0 !important;}
+.side a[href="/r/wheelanddeal#rel"] {background-position: 0 -600px !important;}
+.side a[href="/r/pumparum#rel"] {background-image: url(%%pumparum%%) !important; background-position: 0 0 !important;}
+.side a[href="/r/twinkly#rel"] {background-image: url(%%twinkly%%) !important; background-position: 0 0; height: 80px !important;}
+.side a[href="/r/dks3builds#rel"] {background-image: url(%%dks3builds%%) !important; background-position: 0 0 !important;}
+.side a[href="/r/huntersbell#rel"] {background-image: url(%%side-relatedsubs2%%) !important; background-position: 0 -497px; height: 36px !important;}
+.side a[href="/r/onebros#rel"] {background-position: 0 -250px !important;}
 
    /*#######################
   # 6.4) Content Filters #
@@ -731,6 +1005,7 @@ div.titlebox span.word {display: none;}
 .side .md a[href$="#filter2"] {margin-bottom: 10px;}
 .side .md a[href$="#filter3"] {margin-bottom: 10px;}
 .side .md a[href$="#filter4"] {margin-bottom: 10px;}
+.side .md a[href$="#filter5"] {margin-bottom: 10px;}
 .side .md a[href$="spoilers"] {margin: 10px 0 0 7px;width: 267px;background-color: #666;color: #fff;}
 .side .md a[href*="#filter"]:hover, .side .md a[href$="spoilers"]:hover {background-color: #333;color: #fff;}
 
@@ -1256,337 +1531,14 @@ margin-top: -4px !important;
 .flair-DaDa2BbDa3XXYYZZT:after {background-position: 0 -4048px !important; width: 112px !important}
 .flair-DeDaDa2BbDa3XXYYZZT:after {background-position: 0 -4064px !important; width: 128px !important}
 
-a.author[href$="/user/Eyes_OnThe_Inside"]:after,
-a.author[href$="/user/AndreDaGizzard"]:after,
-a.author[href$="/user/summonmenow"]:after,
-a.author[href$="/user/s3curis"]:after,
-a.author[href$="/user/pancakes78"]:after,
-a.author[href$="/user/obscureaudio"]:after,
-a.author[href$="/user/Komodo_Saurian"]:after,
-a.author[href$="/user/Fliesentischhustler"]:after,
-a.author[href$="/user/11BParrot"]:after,
-a.author[href$="/user/jollypolly89"]:after,
-a.author[href$="/user/sevendots"]:after,
-a.author[href$="/user/PitaPota"]:after,
-a.author[href$="/user/99wattr89"]:after,
-a.author[href$="/user/Jase_SA_27"]:after,
-a.author[href$="/user/FlameBlood"]:after,
-a.author[href$="/user/Gotuhm"]:after,
-a.author[href$="/user/hrashid88"]:after,
-a.author[href$="/user/MessyBarrel"]:after,
-a.author[href$="/user/Bubblefett210"]:after,
-a.author[href$="/user/SenatorFoghorn"]:after,
-a.author[href$="/user/saltforsnails"]:after,
-a.author[href$="/user/Deltron_Zero"]:after,
-a.author[href$="/user/MephistoMathers1"]:after,
-a.author[href$="/user/Red_Eye_Stone"]:after,
-a.author[href$="/user/ulOrca"]:after,
-a.author[href$="/user/dannypdanger"]:after,
-a.author[href$="/user/thecrazysaxophonist"]:after,
-a.author[href$="/user/FatOldSunbro"]:after,
-a.author[href$="/user/Berrek"]:after,
-a.author[href$="/user/Lord_Zaitan"]:after,
-a.author[href$="/user/Gotuhm"]:after,
-a.author[href$="/user/manyardo"]:after,
-a.author[href$="/user/not_superbeak"]:after,
-a.author[href$="/user/AbaddonOrmuz"]:after,
-a.author[href$="/user/Reddest_Sky"]:after,
-a.author[href$="/user/SableDragonRook"]:after,
-a.author[href$="/user/whenov"]:after,
-a.author[href$="/user/JollyDori"]:after,
-a.author[href$="/user/ExperimentalHat"]:after,
-a.author[href$="/user/Djung1"]:after,
-a.author[href$="/user/maligapoo"]:after,
-a.author[href$="/user/Abyssal_Paladin"]:after,
-a.author[href$="/user/Waverly_Price"]:after {
-    display: inline-block;
-    content: 'Grossly Incandescent';
-    font-weight: lighter;
-    color: rgb(157, 132, 75);
-    text-transform: uppercase;
-    background-color: #eee;
-    padding: 2px 4px;
-    border-radius: 5px;
-    border: 1px solid rgb(157, 132, 75);
-    margin: 2px;
-    background-color: #FF6200;
-    border-color: #FF6726;
-    color: #FFD900;    
-} 
-a.author[href$="/user/SenatorFoghorn"]:after,
-a.author[href$="/user/yourguidingmoonlight"]:after {  
-    display: inline-block;
-    content: 'Literally Solaire';
-    font-weight: lighter;
-    color: rgb(157, 132, 75);
-    text-transform: uppercase;
-    background-color: #eee;
-    padding: 2px 4px;
-    border-radius: 5px;
-    border: 1px solid rgb(157, 132, 75);
-    margin: 2px;
-    background-color: #FF6200;
-    border-color: #FF6726;
-    color: #FFD900;  
+
+/* Sidebar image art */
+.side:before {
+  display: block;
+  margin-bottom: 10px;
+  height: 240px;
+  background: url(%%sidebarimg%%) no-repeat;
+  background-size:contain;
+  /* background-size:400px; */
+  content: "";
 }
-
-.flair-green{ color:green;background-color:#DBF7CD;}
-.flair-red{ color:red;background-color:#F7CDCD}
-
-/* CHANGE FLAIR INSTRUCTIONS */
-.flairtoggle {
-  visibility: hidden;
-  font-size: 0px !important;
-}
-.flairtoggle::after {
-  visibility: visible;
-  font-size: 12px !important;
-  content: "Add your own flair to your name:";
-}
-.flairtoggle input {
-  visibility: visible !important;
-}
-
-@-webkit-keyframes mod_animation {
-	0% { -webkit-transform: scale(1); color:blue; }
-	30% { -webkit-transform: scale(1);  }
-	40% { -webkit-transform: scale(1.08);  }
-	50% { -webkit-transform: scale(1); color:red; }
-	60% { -webkit-transform: scale(1);  }
-	70% { -webkit-transform: scale(1.05);  }
-	80% { -webkit-transform: scale(1);  }
-	100% { -webkit-transform: scale(1); color:blue; }
-}
-@keyframes mod_animation {
-	0% { transform: scale(1); color:blue; }
-	30% { transform: scale(1);  }
-	40% { transform: scale(1.08);  }
-	50% { transform: scale(1); color:red; }
-	60% { transform: scale(1);  }
-	70% { transform: scale(1.05);  }
-	80% { transform: scale(1);  }
-	100% { transform: scale(1); color:blue; }
-}
-
-.flair-mod{
-	-webkit-animation-name: 'mod_animation';
-	-webkit-animation-duration: 5000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'mod_animation';
-	animation-duration: 5000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-        background-color:transparent;
-}
-
-@-webkit-keyframes tier2_animation {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.08); }
-	100% { -webkit-transform: scale(1); }
-}
-
-@keyframes tier2_animation {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.08); }
-	100% { transform: scale(1); }
-}
-
-.flair-tier2{
-
-	-webkit-animation-name: 'tier2_animation';
-	-webkit-animation-duration: 5000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'tier2_animation';
-	animation-duration: 5000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-
-        color:green;
-        background-color:#DBF7CD
-}
-
-@-webkit-keyframes tier3_animation {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.08); }
-	100% { -webkit-transform: scale(1); }
-}
-
-@keyframes tier3_animation {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.08); }
-	100% { transform: scale(1); }
-}
-
-.flair-tier3{
-
-	-webkit-animation-name: 'tier3_animation';
-	-webkit-animation-duration: 4000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'tier3_animation';
-	animation-duration: 4000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-
-        color:#A6389D;
-        background-color:#F2EE74
-}
-
-@-webkit-keyframes tier4_animation {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.1); }
-	100% { -webkit-transform: scale(1); }
-}
-
-@keyframes tier4_animation {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.1); }
-	100% { transform: scale(1); }
-}
-
-.flair-tier4{
-
-	-webkit-animation-name: 'tier4_animation';
-	-webkit-animation-duration: 3000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'tier4_animation';
-	animation-duration: 3000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-
-        color:#B300FA;
-        background-color:#FAAF00
-}
-
-@-webkit-keyframes tier5_animation {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.1); }
-	100% { -webkit-transform: scale(1); }
-}
-
-@keyframes tier5_animation {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.1); }
-	100% { transform: scale(1); }
-}
-
-.flair-tier5{
-
-	-webkit-animation-name: 'tier5_animation';
-	-webkit-animation-duration: 2000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'tier5_animation';
-	animation-duration: 2000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-
-        color:#DB1414;
-        background-color:#EB9738
-}
-
-@-webkit-keyframes tier6_animation {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.1); }
-	100% { -webkit-transform: scale(1); }
-}
-
-@keyframes tier6_animation {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.1); }
-	100% { transform: scale(1); }
-}
-
-.flair-tier6{
-
-	-webkit-animation-name: 'tier6_animation';
-	-webkit-animation-duration: 1000ms;
-	-webkit-transform-origin:70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-
-	animation-name: 'tier6_animation';
-	animation-duration: 1000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-
-        color:#FFD900;
-        -webkit-box-shadow: 0px 0px 5px 0px #FF6726;
-        box-shadow: 0px 0px 5px 0px #FF6726;
-        background-color:#FF6200
-}
-
-@-webkit-keyframes tier7_animation{
-  from{
-      -webkit-text-shadow:0px 0px 10px #E83348,
-      0px 0px 10px #E83348, 
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 50px #E83348,
-      0px 0px 50px #E83348,
-      0px 0px 50px #FFD900,
-      0px 0px 150px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px -10px 100px #FFD900,
-      0px -10px 100px #FFD900;}
-}
-
-@keyframes tier7_animation{
-  from{
-      text-shadow:0px 0px 10px #E83348,
-      0px 0px 10px #E83348, 
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 25px #E83348,
-      0px 0px 50px #E83348,
-      0px 0px 50px #E83348,
-      0px 0px 50px #FFD900,
-      0px 0px 150px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px 10px 100px #FFD900,
-      0px -10px 100px #FFD900,
-      0px -10px 100px #FFD900;}
-}
-
-.flair-tier7{
-        -webkit-animation:tier7_animation 2s ease-out infinite alternate;
-        animation:tier7_animation 2s ease-out infinite alternate;
-        -webkit-text-shadow:0px 0px 2px #E83348, 0px 0px 3px #FFD900;
-        text-shadow:0px 0px 2px #E83348, 0px 0px 3px #FFD900;
-
-
-        color:#FFFFFF;
-        -webkit-box-shadow: 0px 0px 3px 0px #E83348;
-        box-shadow: 0px 0px 3px 0px #E83348;
-        background-color:#000000

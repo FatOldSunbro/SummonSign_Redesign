@@ -128,10 +128,18 @@ For more detailed information please [read here](https://www.reddit.com/r/Summon
 ---
 
 >#### **Community Resources**
->> * [DSI SL Range Calc](https://mpql.net/tools/dark-souls/)
->> * [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/)
->> * [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/)
->> * [Soulsplanner](https://soulsplanner.com/)
+>> * [DSI SL Range Calc](https://mpql.net/tools/dark-souls/#filter5)
+>> * [DSII SM Range Calc](https://mpql.net/tools/dark-souls-2/#filter5)
+>> * [DSIII SL Range Calc](https://mpql.net/tools/dark-souls-3/#filter5)
+>> * [Soulsplanner](https://soulsplanner.com/#filter5)
+
+---
+
+>#### **Trading Subreddits**
+[Snuggly](/r/snuggly#rel)
+[WheelandDeal](/r/wheelanddeal#rel)
+[Pumparum](/r/pumparum#rel)
+[Twinkly](/r/twinkly#rel)
 
 ---
 
@@ -140,6 +148,8 @@ For more detailed information please [read here](https://www.reddit.com/r/Summon
 [Dark Souls](/r/darksouls#rel)
 [Dark Souls 2](/r/darksouls2#rel)
 [Dark Souls 3](/r/darksouls3#rel)
+[Bloodborne](/r/bloodborne#rel)
+[FashionSouls](/r/fashionsouls#rel)
+[HuntersBell](/r/huntersbell#rel)
 
 ---
-[This subreddit is night mode compatible](#/RES_SR_Config/NightModeCompatible)
