@@ -12,14 +12,14 @@ type: submission
 action: remove
 action_reason: "missing request type in the title."
 comment: |
-    Hi, Your post has been automatically removed as it is missing [*request type*] in the title and so it does not meet our formatting guidelines:
+    Hello there, your post has been automatically removed as it is missing [*request type*] in the title and so it does not meet our formatting guidelines:
 
-    > You must include in the **title** the [*type of submission*] **and** your [*platform*].
+    > You must include in the **title** the [*request type*] **and** your [*platform*].
 
     > e.g., [*Help*][*PS4*][DS3] Darkeater Midir
 
-    ### Accepted values for [*type of submission*] and [*platform*], one of either:
-    Type of submission | and | Platform
+    ### Accepted values for [*request type*] and [*platform*], one of either:
+    Request type | and | Platform
     :---:|:---:|:----:
     Help | - | PS5/PS4/PS3
     Summon | - | RPCS3/PC
@@ -33,18 +33,18 @@ comment_stickied: true
 
 ### check for platform 
 type: submission
-~title (regex): ["ps5", "ps4", "ps3", "rpcs3", "pc", "steam", "xbx", "xbs", "xbox(360)?", "xbone", "xb(ox)?1", "switch"]
+~title (regex): ["ps5", "ps4", "ps3", "rpcs3", "pc", "steam", "xbx", "xbs", "xbox(360)?", "xboxone", "xbone", "xb(ox)?1", "switch"]
 action: remove
 action_reason: "missing platform in the title."
 comment: |
-    Hi, Your post has been automatically removed as it is missing [*platform*] in the title and so it does not meet our formatting guidelines:
+    Hello there, your post has been automatically removed as it is missing [*platform*] in the title and so it does not meet our formatting guidelines:
 
-    > You must include in the **title** the [*type of submission*] **and** your [*platform*].
+    > You must include in the **title** the [*request type*] **and** your [*platform*].
 
     > e.g., [*Help*][*PS4*][DS3] Darkeater Midir
 
-    ### Accepted values for [*type of submission*] and [*platform*], one of either:
-    Type of submission | and | Platform
+    ### Accepted values for [*request type*] and [*platform*], one of either:
+    Request type | and | Platform
     :---:|:---:|:----:
     Help | - | PS5/PS4/PS3
     Summon | - | RPCS3/PC
@@ -58,15 +58,15 @@ comment_stickied: true
 
 ### Redirect trading posts
 type: submission
-title (regex): ["dropping", "duping", "item(s)?", "mule", "transfer(s)?", "trade(s)?"]
+title (regex): ["dropping", "duping", "mule", "mulling", "transfer(s)?", "trade(s)?"]
 action: remove
 action_reason: "submission about trading items."
 # modmail: |
 #    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
 comment: |
-    Hi, Your post has been automatically removed as it does not meet this subreddit rules.
+    Hello there, your post has been automatically removed as it does not meet this subreddit rules.
 
-    It appears that this post is about trading/duping items, please use the correct subreddit for trading items:
+    It appears that this post is about trading items, please use the correct subreddit for trading items:
 
     * For Dark Souls and Dark Souls Remastered use r/snuggly
 
@@ -74,11 +74,29 @@ comment: |
 
     * For Dark Souls 3 use r/pumparum
 
+    * For Demon Souls use r/twinkly
+
     Please re-submit in the correct subreddit. Thanks!
 
     ---
     If this action was mistakenly performed please [contact the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=)
 comment_stickied: true
+
+---
+
+### Possible trade, item begging alarm
+type: submission
+title (regex): ["item(s)?"]
+# action: remove
+# action_reason: "submission about trading items."
+# modmail: |
+#    The above {{kind}} by /u/{{author}} in /r/{{subreddit}} has been removed as it appears to be a trade post, please investigate.
+modmail: |
+    Full text: {{body}}
+
+    /u/{{author}} posted a {{kind}} (containing the word **[{{match-1}}]**) in /r/{{subreddit}}.
+    
+    Verify this action.
 
 ---
 
@@ -367,7 +385,7 @@ overwrite_flair: true
 
 ### XBOX ONE TAGS
 type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone|xboxone)(.*)help|help(.*)(xbox|xb(ox)?1|xbone|xboxone))"]
 set_flair:
     text: ":xbox: Help Me!"
     css_class: help-me-xbox
@@ -377,7 +395,7 @@ overwrite_flair: true
 ---
 
 type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)summon|summon(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone|xboxone)(.*)summon|summon(.*)(xbox|xb(ox)?1|xbone|xboxone))"]
 set_flair:
     text: ":xbox: Summon Me!"
     css_class: summon-me-xbox
@@ -388,7 +406,7 @@ priority: -1
 ---
 
 type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone|xboxone)(.*)co-?op|co-?op(.*)(xbox|xb(ox)?1|xbone|xboxone))"]
 set_flair:
     text: ":xbox: Co-op with Me!"
     css_class: coop-xbox
@@ -398,7 +416,7 @@ overwrite_flair: true
 ---
 
 type: submission
-title (regex): ["((xbox|xb(ox)?1|xbone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone))"]
+title (regex): ["((xbox|xb(ox)?1|xbone|xboxone)(.*)pvp|pvp(.*)(xbox|xb(ox)?1|xbone|xboxone))"]
 set_flair:
     text: ":xbox: Fight Me!"
     css_class: arena-xbox
@@ -500,13 +518,13 @@ overwrite_flair: true
 ---
 
 ### Report modmail
-reports: 3
+reports: 1
 modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.
 
 ---
 
 ### Remove reported users
-reports: 6
+reports: 3
 action: remove
 action_reason: "reported at least 6 times."
 comment: The post was removed for being reported excessively, MODs will look into this matter.
@@ -596,7 +614,7 @@ modmail: The above {{kind}} by /u/{{author}} was removed because it appears to b
 ---
 
 ### Slient remove post from the following users(shadowban):
-author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95, IttwasmeDIO, Dirty1forlyf]
+author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95, IttwasmeDIO, Dirty1forlyf, cumgobiln, AdPsychological1295]
 action: remove
 action_reason: "user is silenced."
 
