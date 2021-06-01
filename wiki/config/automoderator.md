@@ -597,6 +597,7 @@ action_reason: "spam."
 ---
 
 ### Account karma check
+~author: ["aleksa736"]
 author:
     combined_karma: "< -50"
 action: remove
