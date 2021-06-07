@@ -526,7 +526,7 @@ modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please inve
 ### Remove reported users
 reports: 3
 action: remove
-action_reason: "reported at least 6 times."
+action_reason: "reported at least 3 times."
 comment: The post was removed for being reported excessively, MODs will look into this matter.
 comment_stickied: true
 modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 reports. Please investigate and ensure that this action was correct.
@@ -539,7 +539,7 @@ modmail: The above {{kind}} by /u/{{author}} was removed because it received 6 r
 
 ### Hate Speech Filters
 ### Auto-remove offensive words or phrases - silently nuke them forever
-title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?","cocks?([ -]?suck(ers?|ing)?)?","cum(ming|[ -]shots?)?","cunts?", "lesbo", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)"]
+title+body (regex): ["(f|ph)agg?[eio0]?t?s?(ry)?", "nigg(a|er)s?", "dykes?", "homos?", "autis[mt](ic)?", "retard(s|ed)", "na?zi?", "卐", "rape(d)?", "fgt", "dexfag", "kike?", "k[iy]kes?", "trann(y|ie)s?","cocks?([ -]?suck(ers?|ing)?)?","cum(ming|[ -]shots?)?","cunts?", "lesbo", "(fuck|lib|republi)tard(s|ed|(ed)?ness)?", "kill ?yoursel(f|ves?)", "I hope (you die|it dies?|she dies?|he dies?|they die|they all die|you get ebola|she gets ebola|he gets ebola|they get ebola|it gets? Ebola)", " deserve to (die|be shot)", "ging"]
 action: remove
 action_reason: "offensive content."
 modmail: |
@@ -553,9 +553,7 @@ message: |
     The word was: {{match-1}} - [Link to your {{kind}}]({{permalink}})
 
     ---
-    If you have any criticism/advice regarding the subreddit please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
-
-    **We hope you enjoy your time here at r/SummonSign**
+    [SummonSign Rules](https://www.reddit.com/r/SummonSign/wiki/rules)
 message_subject: Your {{kind}} in /r/{{subreddit}} was removed.
 
 ---
@@ -603,12 +601,10 @@ author:
 action: remove
 action_reason: "account karma below -50, possible troll."
 comment: |
-    Hello {{author}}, your post has been automatically removed as your account is flagged as a troll account/bot. If this was a mistake contact the moderators.
+    Hello {{author}}, your post has been automatically removed as your account is flagged as a troll/bot account. If this was a mistake [contact the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
 
     ---
     Thank you for your understanding and co-operation in creating an enjoyable gaming environment for all.
-
-    If you have any trouble please contact the mod team: [message to the moderators](https://www.reddit.com/message/compose?to=%2Fr%2FSummonSign&subject=&message=).
 comment_stickied: true
 modmail: The above {{kind}} by /u/{{author}} was removed because it appears to be a troll account. Please investigate and ensure that this action was correct.
 
