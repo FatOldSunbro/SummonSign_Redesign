@@ -610,7 +610,7 @@ modmail: The above {{kind}} by /u/{{author}} was removed because it appears to b
 
 ---
 
-### Slient remove post from the following users(shadowban):
+### Silent remove post from the following users(shadowban):
 author: [gaynibba9090, ChungusEater420, Gigi0505, SPambot67, slavknightgayl12, S0ur68w, BonfireFodder, Reb_Eye_Stone, Shweep80, mlugo808, datboy2006, KMACS4769, oldenspace, MinMaxxingGoon, Zelyyx, really_special_spam, datboi_216, Loud-Quarter, TheRightous335, Hypixelizdead, TobiasNH, Phypur, Timageness, Sk8orDie95, IttwasmeDIO, Dirty1forlyf, cumgobiln, AdPsychological1295]
 action: remove
 action_reason: "user is silenced."
