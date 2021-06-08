@@ -519,7 +519,7 @@ overwrite_flair: true
 
 ### Report modmail
 reports: 1
-modmail: The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.
+modmail: The above {{kind}} by /u/{{author}} has received 1 report. Please investigate.
 
 ---
 
